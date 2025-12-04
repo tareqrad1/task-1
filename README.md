@@ -1,73 +1,26 @@
-# React + TypeScript + Vite
+Project Completion Status Update
+Hello,
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Please note that this project is not 100% complete as originally scoped.
 
-Currently, two official plugins are available:
+I started working on this project late after recently receiving the registration form today (or shortly after), which prevented me from completing all features within the given timeframe.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+What Has Been Successfully Implemented:
 
-## React Compiler
+✅ Core Character Fetching: Successfully fetching and displaying the initial list of characters.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+✅ Search Functionality: Implemented working server-side search using the character name parameter.
 
-## Expanding the ESLint configuration
+✅ Routing and Details Page: Functional routing to the /details/:id page.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Character Details: Successfully fetching and displaying all primary character information (Image, Status, Origin, Location).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ UI/Design: Built a consistent, dark-themed, and responsive user interface using Tailwind CSS.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Missing/Incomplete Feature:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+❌ Batch Episode Fetching: The logic to collect all episode URLs for a character and make a single API call to fetch all episode details for the list is implemented but the final display/error handling might need polishing.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+I hope the completed sections effectively demonstrate my proficiency in using React, TypeScript, Custom Hooks, Routing (React Router DOM), and API integration (Axios).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Thank you for your understanding.
